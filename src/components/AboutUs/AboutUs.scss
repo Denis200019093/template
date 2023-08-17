@@ -1,0 +1,27 @@
+@import '../../SCSS/_mixins.scss';
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include adaptiv-value('margin-bottom', 117, 50, 1);
+
+  h3 {
+    @include breakpoint(lg, max) {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__middle {
+    @include adaptiv-value('width', 447, 150, 1);
+
+    button {
+      @include adaptiv-value('margin-top', 60, 14, 1);
+    }
+  }
+
+  &__right {
+    @include adaptiv-value('width', 447, 150, 1);
+  }
+}
